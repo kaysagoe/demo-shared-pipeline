@@ -3,7 +3,9 @@ pipeline {
 
     stages {
         stage("Verify Repo") {
-            echo $GIT_BRANCH
+            steps{
+                echo $GIT_BRANCH
+            }
         }
     }
 }
